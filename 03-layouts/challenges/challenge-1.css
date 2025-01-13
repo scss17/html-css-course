@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  border: black solid 4px;
+  width: 825px;
+  margin: 50px auto;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #9b9996;
+  position: relative;
+  padding: 15px;
+}
+
+.product-title::before {
+  content: "SALE";
+  font-size: 12px;
+  position: absolute;
+  top: -20px;
+  left: -35px;
+  background-color: orangered;
+  color: #f7f7f7;
+  padding: 7px 15px;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+}
+
+.product-image {
+  float: left;
+  margin-right: 40px;
+}
+
+/* PRODUCT INFORMATION */
+main {
+  width: 243px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 12px;
+}
+
+.price {
+  font-size: 24px;
+  float: left;
+}
+
+.shipping {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
+}
+
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+  color: orangered;
+}
+
+.color {
+  background-color: black;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.brown {
+  background-color: brown;
+}
+
+/* Product Details */
+aside {
+  width: 243px;
+  float: left;
+}
+
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 30px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+.details-list li:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  padding: 15px;
+  color: #f7f7f7;
+  background-color: black;
+  width: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-top: 4px solid black;
+}
+
+button:hover {
+  width: 100%;
+  color: black;
+  background-color: #f7f7f7;
+}

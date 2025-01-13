@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  width: 825px;
+  margin: 50px auto;
+  border: black solid 5px;
+}
+
+.product-title {
+  padding: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  background-color: #9b9996;
+  position: relative;
+}
+
+.product-title::before {
+  content: "SALE";
+  font-size: 12px;
+  position: absolute;
+  top: -20px;
+  left: -35px;
+  background-color: orangered;
+  color: #f7f7f7;
+  padding: 7px 15px;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+}
+
+/* PRODUCT INFORMATION */
+.price {
+  font-size: 24px;
+}
+
+.shipping {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #777;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+  color: orangered;
+}
+
+.product-colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  background-color: black;
+  height: 22px;
+  width: 22px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.brown {
+  background-color: brown;
+}
+
+/* Product Details */
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 30px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+.details-list li:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  padding: 15px;
+  color: #f7f7f7;
+  background-color: black;
+  width: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-top: black solid 4px;
+}
+
+button:hover {
+  width: 100%;
+  color: black;
+  background-color: #f7f7f7;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inner-container {
+  display: flex;
+  gap: 20px;
+}
+
+main {
+  flex: 1;
+  padding-top: 5px;
+}
+
+aside {
+  flex: 1;
+  padding-top: 20px;
+}

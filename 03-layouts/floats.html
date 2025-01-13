@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Fundamentals</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>HTML Layouts: Floats</title>
+    <link rel="stylesheet" href="floats.css" />
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <h1>📘 The Code Magazine</h1>
         <nav>
           <a href="blog.html">Blog</a>
@@ -25,8 +25,9 @@
             src="img/laura-jones.jpg"
             alt="profile picture of the author"
             width="50px"
+            class="author-image"
           />
-          <p id="author">
+          <p id="author" class="author">
             Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
           </p>
           <img
